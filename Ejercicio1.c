@@ -8,6 +8,14 @@ typedef struct {
     int num;
 } Parametros;
 
+void *imprimir_cadena(void *param) {
+    Parametros *p = (Parametros *)param;
+    for(int i = 0; i < p->num; i++) {
+        printf("%s\n", p->cad);
+        printf("Hilo ID: %lu\n", pthread_self());
+    }
+    return NULL;
+}
 
 int main(){
     int numero;
@@ -30,5 +38,11 @@ int main(){
 
     strcpy(p2.cad, cadena2);
     p2.num = numero;
+
+        pthread_create(&hilo1, NULL, imprimir_cadena, (void *)&p1);
+    pthread_create(&hilo2, NULL, imprimir_cadena, (void *)&p2);
+
+    pthread_join(hilo1, NULL);
+    pthread_join(hilo2, NULL);
 
 }
