@@ -21,11 +21,15 @@ int main(){
     int numero;
     char cadena1[100], cadena2[100];
 
+
     printf("Input a number: ");
-    scanf("%d", numero);
+    scanf("%d", &numero);
+
+    fflush(stdin);
 
     printf("Input first string: ");
     scanf("%s", cadena1);
+
 
     printf("Input second string: ");
     scanf("%s", cadena2);
@@ -39,10 +43,15 @@ int main(){
     strcpy(p2.cad, cadena2);
     p2.num = numero;
 
-        pthread_create(&hilo1, NULL, imprimir_cadena, (void *)&p1);
+    pthread_create(&hilo1, NULL, imprimir_cadena, (void *)&p1);
     pthread_create(&hilo2, NULL, imprimir_cadena, (void *)&p2);
 
     pthread_join(hilo1, NULL);
     pthread_join(hilo2, NULL);
 
+    printf("Pulsa ENTER para salir...");
+    getchar(); // Captura el salto de línea pendiente si queda uno
+    getchar(); // Espera que el usuario pulse ENTER
+
+    return 0;
 }
