@@ -3,6 +3,10 @@
 #include <pthread.h>
 #include <string.h>
 
+typedef struct {
+    char cad[100];
+    int num;
+} Parametros;
 
 
 int main(){
@@ -17,5 +21,14 @@ int main(){
 
     printf("Input second string: ");
     scanf("%s", cadena2);
+
+    pthread_t hilo1, hilo2;
+    Parametros p1, p2;
+
+    strcpy(p1.cad, cadena1);
+    p1.num = numero;
+
+    strcpy(p2.cad, cadena2);
+    p2.num = numero;
 
 }
