@@ -64,7 +64,7 @@ int main(){
     pthread_join(hilo2, NULL);
     pthread_join(hilo3, NULL);
 
-    //Por ´´´´ultimo, el padre (es decir, el main) muestra la matriz resultado
+    //Por último, el padre (es decir, el main) muestra la matriz resultado
     printf("Matriz resultado C:\n");
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
@@ -73,9 +73,10 @@ int main(){
         printf("\n");
     }
 
+    //Con esto evitamos que no se nos cierre la consola al finalizar los hilos
     printf("Pulsa ENTER para salir...");
-    getchar(); // Captura el salto de línea pendiente si queda uno
-    getchar(); // Espera que el usuario pulse ENTER
+    getchar();
+    getchar();
     return 0;
 }
 
