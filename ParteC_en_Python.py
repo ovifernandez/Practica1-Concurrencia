@@ -1,3 +1,22 @@
+"""
+Simulación de N lectores accediendo a M bibliotecas con sincronización.
+
+Este módulo implementa un sistema de lectores y bibliotecas donde:
+- Hay N lectores que quieren acceder a libros
+- Existen M bibliotecas, cada una con K libros
+- Cada lector visita las bibliotecas en orden circular
+- Los lectores acceden de forma sincronizada a los libros
+- Un libro solo puede ser leído por un lector a la vez
+
+El programa utiliza threading.Lock para garantizar la exclusión
+mutua en el acceso a los libros de cada biblioteca.
+
+Constantes:
+    N (int): Número de lectores
+    M (int): Número de bibliotecas
+    K (int): Número de libros por biblioteca
+"""
+
 import threading
 import random
 import time
@@ -13,6 +32,27 @@ bibliotecas = [[1 for _ in range(K)] for _ in range(M)]
 mutex_bibliotecas = [threading.Lock() for _ in range(M)]
 
 def funcion_lector(id_lector):
+    """
+    Simula el comportamiento de un lector que visita diferentes bibliotecas
+    y toma/devuelve libros de forma sincronizada.
+
+    Args:
+        id_lector (int): Identificador único del lector
+
+    La función implementa el siguiente comportamiento:
+    1. Comienza en una biblioteca inicial (determinada por su id)
+    2. Intenta tomar un libro disponible
+    3. Si encuentra libro:
+        - Lo marca como no disponible
+        - Simula tiempo de lectura
+        - Devuelve el libro
+        - Pasa a la siguiente biblioteca
+    4. Si no encuentra libro:
+        - Termina su ejecución
+    
+    La sincronización se realiza mediante locks individuales para cada biblioteca,
+    asegurando acceso exclusivo al modificar el estado de los libros.
+    """
     biblioteca_actual = id_lector % M
     
     for i in range(K):

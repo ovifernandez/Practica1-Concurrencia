@@ -1,26 +1,84 @@
+/**
+ * @file ParteA_Ejercicio3.c
+ * @brief Búsqueda paralela en un vector utilizando múltiples hilos
+ *
+ * Este programa implementa una búsqueda concurrente de un número en un vector,
+ * dividiendo el vector en 4 segmentos y utilizando un hilo para cada segmento.
+ * Utiliza sincronización mediante mutex para el contador global de ocurrencias.
+ *
+ * Características principales:
+ * - Vector de 20 enteros dividido en 4 segmentos
+ * - 4 hilos realizando búsqueda simultánea
+ * - Sincronización mediante mutex para el contador
+ * - Manejo de memoria compartida
+ */
+
 #include <pthread.h>
 #include <stdio.h>
+
+/* Prototipo de la función de búsqueda */
 void *buscar(void *arg);
 
+/** Contador global de ocurrencias del número buscado */
 int contador = 0;
+
+/** Mutex para proteger el acceso al contador global */
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
-    typedef struct {
-        int *vector;
-        int inicio;
-        int fin;
-        int numBuscado;
+
+/**
+ * @struct Parametros
+ * @brief Estructura para pasar múltiples parámetros a cada hilo
+ *
+ * Esta estructura contiene toda la información necesaria para que un hilo
+ * realice la búsqueda en su segmento asignado del vector.
+ */
+typedef struct {
+    int *vector;     /**< Puntero al vector donde buscar */
+    int inicio;      /**< Índice inicial del segmento a buscar */
+    int fin;         /**< Índice final del segmento a buscar */
+    int numBuscado;  /**< Número que se está buscando */
 } Parametros;
 
+/**
+ * @brief Función que ejecuta cada hilo para buscar en su segmento del vector
+ *
+ * Esta función realiza la búsqueda del número especificado en el segmento
+ * asignado del vector. Cuando encuentra una coincidencia, incrementa el
+ * contador global de manera segura utilizando un mutex.
+ *
+ * @param arg Puntero a la estructura Parametros con la información necesaria
+ * @return void* NULL al terminar la búsqueda
+ *
+ * @note La función utiliza un mutex para proteger la sección crítica
+ *       al incrementar el contador global.
+ */
 void *buscar(void *arg){
     Parametros *p = (Parametros *)arg;
-    for (int i = p->inicio; i< p->fin; i++){
+    
+    /* Recorrer el segmento asignado */
+    for (int i = p->inicio; i < p->fin; i++){
         if(p->vector[i] == p->numBuscado){
+            /* Sección crítica: incrementar contador */
             pthread_mutex_lock(&mutex);
             contador++;
             pthread_mutex_unlock(&mutex);
         }
     }
+    return NULL;
 }
+/**
+ * @brief Función principal del programa
+ *
+ * Realiza las siguientes operaciones:
+ * 1. Solicita al usuario el número a buscar
+ * 2. Inicializa el vector con valores predefinidos
+ * 3. Divide el vector en 4 segmentos
+ * 4. Crea 4 hilos para buscar en paralelo
+ * 5. Espera a que todos los hilos terminen
+ * 6. Muestra el resultado final
+ *
+ * @return int 0 si la ejecución fue exitosa
+ */
 int main() {
     int numBuscado;
     printf("Introduce el numero a buscar en el vector de 20 enteros: ");
