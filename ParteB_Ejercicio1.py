@@ -1,56 +1,40 @@
 import threading
 
-# Constantes
-N = 3  # Tamaño de las matrices NxN
+class MiHilo(threading.Thread):
+    def __init__(self, entero, string):
+        threading.Thread.__init__(self)
+        self.entero = entero
+        self.cadena = string
 
-# Lock para la sección crítica
-lock = threading.Lock()
-
-def rellenar_matriz(id_matriz):
-    """
-    Rellena una matriz NxN con valores introducidos por el usuario
-    Parámetros:
-        id_matriz: identificador de la matriz (por ejemplo: 'A' o 'B')
-    Retorna:
-        matriz: lista de listas con los valores introducidos
-    """
-    pass
-
-def sumar_fila(fila, mat_a, mat_b, mat_c):
-    """
-    Suma la fila indicada de las matrices A y B, guarda resultado en C
-    Parámetros:
-        fila: índice de la fila a sumar
-        mat_a: primera matriz
-        mat_b: segunda matriz
-        mat_c: matriz resultado
-    """
-    pass
-
-def imprimir_matriz(matriz, nombre):
-    """
-    Imprime una matriz con formato
-    Parámetros:
-        matriz: matriz a imprimir
-        nombre: nombre de la matriz para el mensaje
-    """
-    pass
-
+    def run(self):
+        for i in range(self.entero):
+            print(f"Hilo {self.name} - Iteración {i+1}: {self.cadena}")
+        
 if __name__ == "__main__":
     try:
-        # 1. Crear matrices A y B (rellenar_matriz)
-        matriz_a = None
-        matriz_b = None
-        matriz_c = [[0]*N for _ in range(N)]
-
-        # 2. Crear los hilos (uno para cada fila)
-        hilos = []
-
-        # 3. Iniciar los hilos
-
-        # 4. Esperar a que terminen (join)
-
-        # 5. Mostrar resultados
-
+        print("Introduce un entero:")
+        input_value = input()
+        
+        print("Introduce una frase o cadena:")
+        string1 = input()
+        
+        print("Introduce otra frase o cadena:")
+        string2 = input()
+        
+        hilo1 = MiHilo(int(input_value), string1)
+        hilo2 = MiHilo(int(input_value), string2)
+        
+        hilo1.start()
+        hilo2.start()
+        
+        hilo1.join()
+        hilo2.join()
+        
+        print("Finalización de los hilos.")
     except KeyboardInterrupt:
-        print("\nPrograma interrumpido por el usuario")
+        print("\nEjecución interrumpida por el usuario.")
+        
+    
+    
+    
+    
