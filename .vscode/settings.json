@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.yrf": "json",
+        "*.rpx": "xml",
+        "*.stl": "json",
+        "stdlib.h": "c",
+        "pthread.h": "c"
+    }
+}
