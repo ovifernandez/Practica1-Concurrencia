@@ -73,15 +73,15 @@ int main()
     char cadena1[100], cadena2[100];
 
     // Solicitar al usuario el número y las cadenas
-    printf("Input a number: ");
+    printf("Introduzca el número de repeticiones que desea: ");
     scanf("%d", &numero);
 
     fflush(stdin);
 
-    printf("Input first string: ");
+    printf("Introduzca la primera cadena: ");
     scanf("%s", cadena1);
 
-    printf("Input second string: ");
+    printf("Introduzca la segunda cadena: ");
     scanf("%s", cadena2);
 
     // Declarar hilos y estructuras de parámetros
