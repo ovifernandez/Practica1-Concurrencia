@@ -23,6 +23,7 @@ contador_global = 0
 # Lock para proteger el acceso al contador global
 lock = threading.Lock()
 
+
 def buscar_numero(segmento, numero):
     """
     Busca un número específico en un segmento del vector y actualiza
@@ -36,25 +37,25 @@ def buscar_numero(segmento, numero):
     al actualizar el contador_global, evitando condiciones de carrera.
     """
     global contador_global
-    
+
     with lock:
         for num in segmento:
             if num == numero:
                 contador_global += 1
         print(f"Número {numero} encontrado {contador_global} veces hasta ahora.")
-        
-        
+
+
 def main():
     """
     Función principal que coordina la búsqueda paralela.
-    
+
     Realiza las siguientes tareas:
     1. Inicializa un vector de prueba con números
     2. Divide el vector en 4 segmentos iguales
     3. Crea un hilo de búsqueda para cada segmento
     4. Espera a que todos los hilos terminen
     5. Muestra el resultado total
-    
+
     La función maneja la interrupción del usuario mediante
     KeyboardInterrupt para una terminación limpia.
     """
@@ -66,22 +67,25 @@ def main():
         segmento3 = vector[10:15]
         segmento4 = vector[15:20]
         segmentos = [segmento1, segmento2, segmento3, segmento4]
-        
+
         numero_a_buscar = int(input("Introduce el número a buscar en el vector: "))
-        
+
         hilos = []
         for segmento in segmentos:
             hilo = threading.Thread(target=buscar_numero, args=(segmento, numero_a_buscar))
             hilos.append(hilo)
             hilo.start()
-        
+
         for hilo in hilos:
             hilo.join()
-        
-        print(f"\nEl número {numero_a_buscar} fue encontrado un total de {contador_global} veces en el vector.")
-        
+
+        print(
+            f"\nEl número {numero_a_buscar} fue encontrado un total de {contador_global} veces en el vector."
+        )
+
     except KeyboardInterrupt:
         print("\nEjecución interrumpida por el usuario.")
+
 
 if __name__ == "__main__":
     main()

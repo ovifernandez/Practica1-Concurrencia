@@ -35,11 +35,12 @@ void rellenarMatriz(int mat[N][N], int id);
  * Esta estructura contiene punteros a las tres matrices y el índice
  * de la fila que debe procesar el hilo correspondiente.
  */
-typedef struct {
-    int (*matA)[N];    /**< Puntero a la primera matriz */
-    int (*matB)[N];    /**< Puntero a la segunda matriz */
-    int (*matC)[N];    /**< Puntero a la matriz resultado */
-    int fila;          /**< Índice de la fila a procesar */
+typedef struct
+{
+    int (*matA)[N]; /**< Puntero a la primera matriz */
+    int (*matB)[N]; /**< Puntero a la segunda matriz */
+    int (*matC)[N]; /**< Puntero a la matriz resultado */
+    int fila;       /**< Índice de la fila a procesar */
 } MatrixParams;
 
 /**
@@ -52,12 +53,14 @@ typedef struct {
  * @param param Puntero a la estructura MatrixParams con los datos necesarios
  * @return void* NULL al terminar la suma
  */
-void *sumaFila(void *param){
+void *sumaFila(void *param)
+{
     MatrixParams *p = (MatrixParams *)param;
     int fila = p->fila;
-    
+
     /* Sumar elementos de la fila */
-    for(int j = 0; j < N; j++) {
+    for (int j = 0; j < N; j++)
+    {
         p->matC[fila][j] = p->matA[fila][j] + p->matB[fila][j];
     }
     return NULL;
@@ -75,7 +78,8 @@ void *sumaFila(void *param){
  *
  * @return int 0 si la ejecución fue exitosa, 1 si hubo error
  */
-int main(){
+int main()
+{
     /* Declaración e inicialización de matrices */
     int matrixA[N][N], matrixB[N][N], matrixC[N][N] = {0};
 
@@ -97,15 +101,18 @@ int main(){
      * Como las operaciones son independientes entre sí, no se requieren semáforos.
      * El orden de ejecución de los hilos no afecta al resultado final.
      */
-    if (pthread_create(&hilo1, NULL, sumaFila, &p1) != 0) {
+    if (pthread_create(&hilo1, NULL, sumaFila, &p1) != 0)
+    {
         perror("Error creando hilo1");
         return 1;
     }
-    if (pthread_create(&hilo2, NULL, sumaFila, &p2) != 0) {
+    if (pthread_create(&hilo2, NULL, sumaFila, &p2) != 0)
+    {
         perror("Error creando hilo2");
         return 1;
     }
-    if (pthread_create(&hilo3, NULL, sumaFila, &p3) != 0) {
+    if (pthread_create(&hilo3, NULL, sumaFila, &p3) != 0)
+    {
         perror("Error creando hilo3");
         return 1;
     }
@@ -120,8 +127,10 @@ int main(){
 
     /* Mostrar la matriz resultado una vez completadas todas las operaciones */
     printf("Matriz resultado C:\n");
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
             printf("%d ", matrixC[i][j]);
         }
         printf("\n");
@@ -146,24 +155,33 @@ int main(){
  * @param mat Matriz NxN a rellenar
  * @param id Identificador de la matriz para los mensajes
  */
-void rellenarMatriz(int mat[N][N], int id) {
+void rellenarMatriz(int mat[N][N], int id)
+{
     char buf[128];
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
             int ok = 0;
-            while (!ok) {
-                printf("Input numbers for the [%d][%d] elem of the matrix %d:\n", i, j, id);
-                if (!fgets(buf, sizeof(buf), stdin)) {
+            while (!ok)
+            {
+                printf("Introduzca el número para el elemento en la fila [%d] y columna [%d] de la matriz %d:\n", i, j, id);
+                if (!fgets(buf, sizeof(buf), stdin))
+                {
                     clearerr(stdin);
                     printf("Error leyendo entrada. Inténtalo de nuevo.\n");
                     continue;
                 }
-                int val; char extra;
+                int val;
+                char extra;
                 /* Validación: asegurarse de que la entrada es un número entero válido */
-                if (sscanf(buf, " %d %c", &val, &extra) == 1) {
+                if (sscanf(buf, " %d %c", &val, &extra) == 1)
+                {
                     mat[i][j] = val;
                     ok = 1;
-                } else {
+                }
+                else
+                {
                     printf("Entrada inválida. Introduce un entero.\n");
                 }
             }

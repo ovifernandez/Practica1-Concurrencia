@@ -25,9 +25,10 @@
  * Esta estructura contiene la cadena a imprimir y el número de veces
  * que debe imprimirse.
  */
-typedef struct {
-    char cad[100];    /**< Cadena de texto a imprimir */
-    int num;          /**< Número de veces a imprimir la cadena */
+typedef struct
+{
+    char cad[100]; /**< Cadena de texto a imprimir */
+    int num;       /**< Número de veces a imprimir la cadena */
 } Parametros;
 
 /**
@@ -40,11 +41,16 @@ typedef struct {
  * @param param Puntero a la estructura Parametros con los datos necesarios
  * @return void* NULL al terminar la impresión
  */
-void *imprimir_cadena(void *param) {
+void *imprimir_cadena(void *param)
+{
+    // Estructura Parametros con los datos para el hilo
     Parametros *p = (Parametros *)param;
-    for(int i = 0; i < p->num; i++) {
+
+    // Imprimir la cadena el número especificado de veces
+    for (int i = 0; i < p->num; i++)
+    {
         printf("%s\n", p->cad);
-        printf("Hilo ID: %lu\n", pthread_self());
+        printf("Hilo ID: %p\n", (void *)pthread_self());
     }
     return NULL;
 }
@@ -60,23 +66,25 @@ void *imprimir_cadena(void *param) {
  *
  * @return int 0 si la ejecución fue exitosa
  */
-int main(){
+int main()
+{
+    // Variables para almacenar la entrada del usuario
     int numero;
     char cadena1[100], cadena2[100];
 
-
-    printf("Input a number: ");
+    // Solicitar al usuario el número y las cadenas
+    printf("Introduzca el número de repeticiones que desea: ");
     scanf("%d", &numero);
 
     fflush(stdin);
 
-    printf("Input first string: ");
+    printf("Introduzca la primera cadena: ");
     scanf("%s", cadena1);
 
-
-    printf("Input second string: ");
+    printf("Introduzca la segunda cadena: ");
     scanf("%s", cadena2);
 
+    // Declarar hilos y estructuras de parámetros
     pthread_t hilo1, hilo2;
     Parametros p1, p2;
 
@@ -86,18 +94,18 @@ int main(){
     strcpy(p2.cad, cadena2);
     p2.num = numero;
 
-    /* Crear dos hilos, cada uno imprimirá su cadena correspondiente */
+    // Crear dos hilos, cada uno imprimirá su cadena correspondiente
     pthread_create(&hilo1, NULL, imprimir_cadena, (void *)&p1);
     pthread_create(&hilo2, NULL, imprimir_cadena, (void *)&p2);
 
-    /* Esperar a que ambos hilos terminen antes de finalizar el programa */
+    // Esperar a que ambos hilos terminen antes de finalizar el programa
     pthread_join(hilo1, NULL);
     pthread_join(hilo2, NULL);
 
-    /* Pausar la ejecución para ver los resultados antes de terminar */
+    // Pausar la ejecución para ver los resultados antes de terminar
     printf("Pulsa ENTER para salir...");
-    getchar(); /* Captura el salto de línea pendiente si queda uno */
-    getchar(); /* Espera que el usuario pulse ENTER */
+    getchar(); // Captura el salto de línea pendiente si queda uno
+    getchar(); // Espera que el usuario pulse ENTER
 
     return 0;
 }
