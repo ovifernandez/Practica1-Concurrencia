@@ -68,8 +68,11 @@ def buscar_numero(segmento, numero, *, nombre_hilo, logger):
     """
     global contador_global
 
+    thread_id = threading.get_ident()  # Identificador único del hilo de búsqueda
     logger.info(
-        "inicio | segmento=%s | tamaño=%d | objetivo=%d",
+        "inicio | hilo=%s | hilo_id=%d | segmento=%s | tamaño=%d | objetivo=%d",
+        nombre_hilo,
+        thread_id,
         segmento,
         len(segmento),
         numero,
@@ -79,8 +82,9 @@ def buscar_numero(segmento, numero, *, nombre_hilo, logger):
     local_matches = 0
     for indice_relativo, num in enumerate(segmento):
         logger.info(
-            "comparacion | hilo=%s | posicion_segmento=%d | valor=%d | objetivo=%d",
+            "comparacion | hilo=%s | hilo_id=%d | posicion_segmento=%d | valor=%d | objetivo=%d",
             nombre_hilo,
+            thread_id,
             indice_relativo,
             num,
             numero,
@@ -88,8 +92,9 @@ def buscar_numero(segmento, numero, *, nombre_hilo, logger):
         if num == numero:
             local_matches += 1
             logger.info(
-                "coincidencia | hilo=%s | posicion_segmento=%d | coincidencias_locales=%d",
+                "coincidencia | hilo=%s | hilo_id=%d | posicion_segmento=%d | coincidencias_locales=%d",
                 nombre_hilo,
+                thread_id,
                 indice_relativo,
                 local_matches,
             )
@@ -98,14 +103,18 @@ def buscar_numero(segmento, numero, *, nombre_hilo, logger):
     with lock:
         contador_global += local_matches
         logger.info(
-            "actualizacion_global | incremento=%d | total=%d",
+            "actualizacion_global | hilo=%s | hilo_id=%d | incremento=%d | total=%d",
+            nombre_hilo,
+            thread_id,
             local_matches,
             contador_global,
         )
 
-    print(f"Hilo {nombre_hilo}: encontró {local_matches} coincidencias en su segmento.")
+    print(f"Hilo {nombre_hilo} (id={thread_id}): encontró {local_matches} coincidencias en su segmento.")
     logger.info(
-        "fin | coincidencias_locales=%d | total_global=%d",
+        "fin | hilo=%s | hilo_id=%d | coincidencias_locales=%d | total_global=%d",
+        nombre_hilo,
+        thread_id,
         local_matches,
         contador_global,
     )

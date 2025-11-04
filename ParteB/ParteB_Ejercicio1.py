@@ -85,16 +85,23 @@ class MiHilo(threading.Thread):
         mostrando el nombre del hilo y el número de iteración actual.
         Además de la salida por consola, registra trazas en un fichero.
         """
-        self.logger.info("inicio | repeticiones=%d | mensaje=%r", self.entero, self.cadena)
+        thread_id = threading.get_ident()  # Identificador numérico del hilo en ejecución
+        self.logger.info(
+            "inicio | hilo_id=%d | repeticiones=%d | mensaje=%r",
+            thread_id,
+            self.entero,
+            self.cadena,
+        )
         for i in range(self.entero):
-            print(f"Hilo {self.name} - Iteración {i + 1}: {self.cadena}")
+            print(f"Hilo {self.name} (id={thread_id}) - Iteración {i + 1}: {self.cadena}")
             self.logger.info(
-                "iteracion=%d | mensaje=%r | hilo_activo=%d",
+                "iteracion=%d | hilo_id=%d | mensaje=%r | hilos_activos=%d",
                 i + 1,
+                thread_id,
                 self.cadena,
                 threading.active_count(),
             )
-        self.logger.info("fin | repeticiones=%d", self.entero)
+        self.logger.info("fin | hilo_id=%d | repeticiones=%d", thread_id, self.entero)
 
 
 def main():

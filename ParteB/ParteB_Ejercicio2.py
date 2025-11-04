@@ -76,9 +76,11 @@ class MiHilo(threading.Thread):
         almacenando el resultado en la matriz C y registrando cada operación
         en el fichero de trazas compartido.
         """
+        thread_id = threading.get_ident()  # Identificador numérico del hilo de trabajo
         self.logger.info(
-            "inicio | fila=%d | datos_A=%s | datos_B=%s",
+            "inicio | fila=%d | hilo_id=%d | datos_A=%s | datos_B=%s",
             self.fila + 1,
+            thread_id,
             self.mat_a[self.fila],
             self.mat_b[self.fila],
         )
@@ -88,14 +90,20 @@ class MiHilo(threading.Thread):
             resultado = valor_a + valor_b
             self.mat_c[self.fila][i] = resultado
             self.logger.info(
-                "iteracion | fila=%d | columna=%d | %d + %d = %d",
+                "iteracion | fila=%d | columna=%d | hilo_id=%d | %d + %d = %d",
                 self.fila + 1,
                 i + 1,
+                thread_id,
                 valor_a,
                 valor_b,
                 resultado,
             )
-        self.logger.info("fin | fila=%d | resultado=%s", self.fila + 1, self.mat_c[self.fila])
+        self.logger.info(
+            "fin | fila=%d | hilo_id=%d | resultado=%s",
+            self.fila + 1,
+            thread_id,
+            self.mat_c[self.fila],
+        )
 
 
 def rellenar_matriz(matriz, id_matriz, logger):
