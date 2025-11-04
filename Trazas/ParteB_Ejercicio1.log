@@ -1,0 +1,19 @@
+[2025-11-04 18:42:34.228] principal | inicio | Esperando datos de entrada
+[2025-11-04 18:42:50.683] principal | datos | repeticiones=4 | cadena1='David_Mario_Carmen' | cadena2='Enrique_Martinez_Moreno'
+[2025-11-04 18:42:50.684] Hilo-1 | inicio | hilo_id=6118584320 | repeticiones=4 | mensaje='David_Mario_Carmen'
+[2025-11-04 18:42:50.684] principal | creacion_hilo | Lanzado Hilo-1
+[2025-11-04 18:42:50.684] Hilo-1 | iteracion=1 | hilo_id=6118584320 | mensaje='David_Mario_Carmen' | hilos_activos=2
+[2025-11-04 18:42:50.685] principal | creacion_hilo | Lanzado Hilo-2
+[2025-11-04 18:42:50.685] Hilo-2 | inicio | hilo_id=6135410688 | repeticiones=4 | mensaje='Enrique_Martinez_Moreno'
+[2025-11-04 18:42:50.685] Hilo-1 | iteracion=2 | hilo_id=6118584320 | mensaje='David_Mario_Carmen' | hilos_activos=3
+[2025-11-04 18:42:50.685] Hilo-2 | iteracion=1 | hilo_id=6135410688 | mensaje='Enrique_Martinez_Moreno' | hilos_activos=3
+[2025-11-04 18:42:50.685] Hilo-2 | iteracion=2 | hilo_id=6135410688 | mensaje='Enrique_Martinez_Moreno' | hilos_activos=3
+[2025-11-04 18:42:50.685] Hilo-1 | iteracion=3 | hilo_id=6118584320 | mensaje='David_Mario_Carmen' | hilos_activos=3
+[2025-11-04 18:42:50.685] Hilo-1 | iteracion=4 | hilo_id=6118584320 | mensaje='David_Mario_Carmen' | hilos_activos=3
+[2025-11-04 18:42:50.685] Hilo-1 | fin | hilo_id=6118584320 | repeticiones=4
+[2025-11-04 18:42:50.685] Hilo-2 | iteracion=3 | hilo_id=6135410688 | mensaje='Enrique_Martinez_Moreno' | hilos_activos=3
+[2025-11-04 18:42:50.685] Hilo-2 | iteracion=4 | hilo_id=6135410688 | mensaje='Enrique_Martinez_Moreno' | hilos_activos=2
+[2025-11-04 18:42:50.685] Hilo-2 | fin | hilo_id=6135410688 | repeticiones=4
+[2025-11-04 18:42:50.685] principal | join_hilo | Finalizado Hilo-2
+[2025-11-04 18:42:50.686] principal | join_hilo | Finalizado Hilo-1
+[2025-11-04 18:42:50.686] principal | fin | Programa completado

@@ -1,0 +1,16 @@
+[2025-11-04 18:06:00.760] principal (id=0x1f3dfc800) | inicio | Creación de hilos de trabajo
+[2025-11-04 18:06:00.761] principal (id=0x1f3dfc800) | creacion | Hilos lanzados
+[2025-11-04 18:06:00.761] Hilo-1 (id=0x16d487000) | inicio | El hilo comienza su ejecución
+[2025-11-04 18:06:00.761] Hilo-2 (id=0x16d513000) | inicio | El hilo comienza su ejecución
+[2025-11-04 18:06:00.761] Hilo-2 (id=0x16d513000) | iteracion | iter=1 | Enrique_Martinez_Moreno
+[2025-11-04 18:06:00.761] Hilo-2 (id=0x16d513000) | iteracion | iter=2 | Enrique_Martinez_Moreno
+[2025-11-04 18:06:00.761] Hilo-2 (id=0x16d513000) | iteracion | iter=3 | Enrique_Martinez_Moreno
+[2025-11-04 18:06:00.761] Hilo-2 (id=0x16d513000) | iteracion | iter=4 | Enrique_Martinez_Moreno
+[2025-11-04 18:06:00.761] Hilo-2 (id=0x16d513000) | fin | El hilo finaliza su ejecución
+[2025-11-04 18:06:00.761] Hilo-1 (id=0x16d487000) | iteracion | iter=1 | David_Mario_Carmen
+[2025-11-04 18:06:00.761] Hilo-1 (id=0x16d487000) | iteracion | iter=2 | David_Mario_Carmen
+[2025-11-04 18:06:00.761] Hilo-1 (id=0x16d487000) | iteracion | iter=3 | David_Mario_Carmen
+[2025-11-04 18:06:00.761] Hilo-1 (id=0x16d487000) | iteracion | iter=4 | David_Mario_Carmen
+[2025-11-04 18:06:00.761] Hilo-1 (id=0x16d487000) | fin | El hilo finaliza su ejecución
+[2025-11-04 18:06:00.761] principal (id=0x1f3dfc800) | sincronizacion | Hilos finalizados
+[2025-11-04 18:06:02.718] principal (id=0x1f3dfc800) | fin | Finaliza la ejecución del programa

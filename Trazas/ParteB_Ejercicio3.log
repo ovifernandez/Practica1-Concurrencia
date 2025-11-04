@@ -1,0 +1,45 @@
+[2025-11-04 18:43:47.453] principal | inicio | Preparando vector y entrada del usuario
+[2025-11-04 18:43:48.758] principal | entrada_usuario | objetivo=1 | vector=[5, 12, 7, 3, 9, 15, 20, 8, 19, 6, 14, 2, 19, 4, 1, 1, 17, 19, 13, 16]
+[2025-11-04 18:43:48.759] Segmento-1 | inicio | hilo=Segmento-1 | hilo_id=6182400000 | segmento=[5, 12, 7, 3, 9] | tamaño=5 | objetivo=1
+[2025-11-04 18:43:48.759] Segmento-1 | comparacion | hilo=Segmento-1 | hilo_id=6182400000 | posicion_segmento=0 | valor=5 | objetivo=1
+[2025-11-04 18:43:48.759] Segmento-1 | comparacion | hilo=Segmento-1 | hilo_id=6182400000 | posicion_segmento=1 | valor=12 | objetivo=1
+[2025-11-04 18:43:48.759] Segmento-1 | comparacion | hilo=Segmento-1 | hilo_id=6182400000 | posicion_segmento=2 | valor=7 | objetivo=1
+[2025-11-04 18:43:48.759] Segmento-1 | comparacion | hilo=Segmento-1 | hilo_id=6182400000 | posicion_segmento=3 | valor=3 | objetivo=1
+[2025-11-04 18:43:48.759] Segmento-1 | comparacion | hilo=Segmento-1 | hilo_id=6182400000 | posicion_segmento=4 | valor=9 | objetivo=1
+[2025-11-04 18:43:48.759] Segmento-1 | actualizacion_global | hilo=Segmento-1 | hilo_id=6182400000 | incremento=0 | total=0
+[2025-11-04 18:43:48.759] principal | creacion_hilo | Lanzado Segmento-1
+[2025-11-04 18:43:48.759] Segmento-1 | fin | hilo=Segmento-1 | hilo_id=6182400000 | coincidencias_locales=0 | total_global=0
+[2025-11-04 18:43:48.760] principal | creacion_hilo | Lanzado Segmento-2
+[2025-11-04 18:43:48.760] Segmento-3 | inicio | hilo=Segmento-3 | hilo_id=6216052736 | segmento=[14, 2, 19, 4, 1] | tamaño=5 | objetivo=1
+[2025-11-04 18:43:48.760] Segmento-3 | comparacion | hilo=Segmento-3 | hilo_id=6216052736 | posicion_segmento=0 | valor=14 | objetivo=1
+[2025-11-04 18:43:48.760] Segmento-3 | comparacion | hilo=Segmento-3 | hilo_id=6216052736 | posicion_segmento=1 | valor=2 | objetivo=1
+[2025-11-04 18:43:48.760] Segmento-3 | comparacion | hilo=Segmento-3 | hilo_id=6216052736 | posicion_segmento=2 | valor=19 | objetivo=1
+[2025-11-04 18:43:48.760] Segmento-3 | comparacion | hilo=Segmento-3 | hilo_id=6216052736 | posicion_segmento=3 | valor=4 | objetivo=1
+[2025-11-04 18:43:48.760] Segmento-3 | comparacion | hilo=Segmento-3 | hilo_id=6216052736 | posicion_segmento=4 | valor=1 | objetivo=1
+[2025-11-04 18:43:48.760] Segmento-3 | coincidencia | hilo=Segmento-3 | hilo_id=6216052736 | posicion_segmento=4 | coincidencias_locales=1
+[2025-11-04 18:43:48.760] Segmento-3 | actualizacion_global | hilo=Segmento-3 | hilo_id=6216052736 | incremento=1 | total=1
+[2025-11-04 18:43:48.760] Segmento-3 | fin | hilo=Segmento-3 | hilo_id=6216052736 | coincidencias_locales=1 | total_global=1
+[2025-11-04 18:43:48.760] Segmento-2 | inicio | hilo=Segmento-2 | hilo_id=6199226368 | segmento=[15, 20, 8, 19, 6] | tamaño=5 | objetivo=1
+[2025-11-04 18:43:48.760] Segmento-2 | comparacion | hilo=Segmento-2 | hilo_id=6199226368 | posicion_segmento=0 | valor=15 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-2 | comparacion | hilo=Segmento-2 | hilo_id=6199226368 | posicion_segmento=1 | valor=20 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-2 | comparacion | hilo=Segmento-2 | hilo_id=6199226368 | posicion_segmento=2 | valor=8 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-2 | comparacion | hilo=Segmento-2 | hilo_id=6199226368 | posicion_segmento=3 | valor=19 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-2 | comparacion | hilo=Segmento-2 | hilo_id=6199226368 | posicion_segmento=4 | valor=6 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-2 | actualizacion_global | hilo=Segmento-2 | hilo_id=6199226368 | incremento=0 | total=1
+[2025-11-04 18:43:48.761] Segmento-2 | fin | hilo=Segmento-2 | hilo_id=6199226368 | coincidencias_locales=0 | total_global=1
+[2025-11-04 18:43:48.760] principal | creacion_hilo | Lanzado Segmento-3
+[2025-11-04 18:43:48.761] Segmento-4 | inicio | hilo=Segmento-4 | hilo_id=6232879104 | segmento=[1, 17, 19, 13, 16] | tamaño=5 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-4 | comparacion | hilo=Segmento-4 | hilo_id=6232879104 | posicion_segmento=0 | valor=1 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-4 | coincidencia | hilo=Segmento-4 | hilo_id=6232879104 | posicion_segmento=0 | coincidencias_locales=1
+[2025-11-04 18:43:48.761] Segmento-4 | comparacion | hilo=Segmento-4 | hilo_id=6232879104 | posicion_segmento=1 | valor=17 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-4 | comparacion | hilo=Segmento-4 | hilo_id=6232879104 | posicion_segmento=2 | valor=19 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-4 | comparacion | hilo=Segmento-4 | hilo_id=6232879104 | posicion_segmento=3 | valor=13 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-4 | comparacion | hilo=Segmento-4 | hilo_id=6232879104 | posicion_segmento=4 | valor=16 | objetivo=1
+[2025-11-04 18:43:48.761] Segmento-4 | actualizacion_global | hilo=Segmento-4 | hilo_id=6232879104 | incremento=1 | total=2
+[2025-11-04 18:43:48.761] principal | creacion_hilo | Lanzado Segmento-4
+[2025-11-04 18:43:48.761] Segmento-4 | fin | hilo=Segmento-4 | hilo_id=6232879104 | coincidencias_locales=1 | total_global=2
+[2025-11-04 18:43:48.761] principal | join_hilo | Finalizado Segmento-4
+[2025-11-04 18:43:48.761] principal | join_hilo | Finalizado Segmento-3
+[2025-11-04 18:43:48.761] principal | join_hilo | Finalizado Segmento-2
+[2025-11-04 18:43:48.761] principal | join_hilo | Finalizado Segmento-1
+[2025-11-04 18:43:48.761] principal | resultado | objetivo=1 | total_global=2

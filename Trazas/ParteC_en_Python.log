@@ -1,0 +1,202 @@
+[2025-11-04 18:49:24.607] principal | inicio_simulacion | Preparando lectores
+[2025-11-04 18:49:24.607] principal | hilo_creado | lector=0 | hilo=Lector-0
+[2025-11-04 18:49:24.607] principal | hilo_creado | lector=1 | hilo=Lector-1
+[2025-11-04 18:49:24.607] principal | hilo_creado | lector=2 | hilo=Lector-2
+[2025-11-04 18:49:24.607] principal | hilo_creado | lector=3 | hilo=Lector-3
+[2025-11-04 18:49:24.607] principal | hilo_creado | lector=4 | hilo=Lector-4
+[2025-11-04 18:49:24.607] principal | hilo_creado | lector=5 | hilo=Lector-5
+[2025-11-04 18:49:24.607] principal | hilo_creado | lector=6 | hilo=Lector-6
+[2025-11-04 18:49:24.607] principal | hilo_creado | lector=7 | hilo=Lector-7
+[2025-11-04 18:49:24.607] principal | hilo_creado | lector=8 | hilo=Lector-8
+[2025-11-04 18:49:24.608] principal | hilo_creado | lector=9 | hilo=Lector-9
+[2025-11-04 18:49:24.608] Lector-0 | inicio | lector=0 | hilo_id=6106198016 | biblioteca=0
+[2025-11-04 18:49:24.608] principal | creacion_hilo | hilo=Lector-0
+[2025-11-04 18:49:24.608] Lector-1 | inicio | lector=1 | hilo_id=6123024384 | biblioteca=1
+[2025-11-04 18:49:24.608] Lector-0 | obtiene_libro | lector=0 | hilo_id=6106198016 | biblioteca=0 | libro=0
+[2025-11-04 18:49:24.608] principal | creacion_hilo | hilo=Lector-1
+[2025-11-04 18:49:24.608] Lector-1 | obtiene_libro | lector=1 | hilo_id=6123024384 | biblioteca=1 | libro=0
+[2025-11-04 18:49:24.608] principal | creacion_hilo | hilo=Lector-2
+[2025-11-04 18:49:24.608] Lector-2 | inicio | lector=2 | hilo_id=6139850752 | biblioteca=2
+[2025-11-04 18:49:24.608] Lector-2 | obtiene_libro | lector=2 | hilo_id=6139850752 | biblioteca=2 | libro=0
+[2025-11-04 18:49:24.608] Lector-3 | inicio | lector=3 | hilo_id=6156677120 | biblioteca=0
+[2025-11-04 18:49:24.608] Lector-3 | obtiene_libro | lector=3 | hilo_id=6156677120 | biblioteca=0 | libro=1
+[2025-11-04 18:49:24.608] principal | creacion_hilo | hilo=Lector-3
+[2025-11-04 18:49:24.608] Lector-4 | inicio | lector=4 | hilo_id=6173503488 | biblioteca=1
+[2025-11-04 18:49:24.608] Lector-4 | obtiene_libro | lector=4 | hilo_id=6173503488 | biblioteca=1 | libro=1
+[2025-11-04 18:49:24.608] principal | creacion_hilo | hilo=Lector-4
+[2025-11-04 18:49:24.609] Lector-5 | inicio | lector=5 | hilo_id=6190329856 | biblioteca=2
+[2025-11-04 18:49:24.609] Lector-5 | obtiene_libro | lector=5 | hilo_id=6190329856 | biblioteca=2 | libro=1
+[2025-11-04 18:49:24.609] principal | creacion_hilo | hilo=Lector-5
+[2025-11-04 18:49:24.609] Lector-6 | inicio | lector=6 | hilo_id=6207156224 | biblioteca=0
+[2025-11-04 18:49:24.609] Lector-6 | obtiene_libro | lector=6 | hilo_id=6207156224 | biblioteca=0 | libro=2
+[2025-11-04 18:49:24.609] principal | creacion_hilo | hilo=Lector-6
+[2025-11-04 18:49:24.609] Lector-7 | inicio | lector=7 | hilo_id=6223982592 | biblioteca=1
+[2025-11-04 18:49:24.609] principal | creacion_hilo | hilo=Lector-7
+[2025-11-04 18:49:24.609] Lector-8 | inicio | lector=8 | hilo_id=6240808960 | biblioteca=2
+[2025-11-04 18:49:24.609] Lector-8 | obtiene_libro | lector=8 | hilo_id=6240808960 | biblioteca=2 | libro=2
+[2025-11-04 18:49:24.609] Lector-7 | obtiene_libro | lector=7 | hilo_id=6223982592 | biblioteca=1 | libro=2
+[2025-11-04 18:49:24.609] principal | creacion_hilo | hilo=Lector-8
+[2025-11-04 18:49:24.609] Lector-9 | inicio | lector=9 | hilo_id=6257635328 | biblioteca=0
+[2025-11-04 18:49:24.609] principal | creacion_hilo | hilo=Lector-9
+[2025-11-04 18:49:24.609] Lector-9 | obtiene_libro | lector=9 | hilo_id=6257635328 | biblioteca=0 | libro=3
+[2025-11-04 18:49:25.633] Lector-6 | devuelve_libro | lector=6 | hilo_id=6207156224 | biblioteca=0 | libro=2
+[2025-11-04 18:49:25.633] Lector-6 | cambia_biblioteca | lector=6 | hilo_id=6207156224 | siguiente=1
+[2025-11-04 18:49:25.633] Lector-6 | obtiene_libro | lector=6 | hilo_id=6207156224 | biblioteca=1 | libro=3
+[2025-11-04 18:49:26.021] Lector-2 | devuelve_libro | lector=2 | hilo_id=6139850752 | biblioteca=2 | libro=0
+[2025-11-04 18:49:26.021] Lector-2 | cambia_biblioteca | lector=2 | hilo_id=6139850752 | siguiente=0
+[2025-11-04 18:49:26.021] Lector-2 | obtiene_libro | lector=2 | hilo_id=6139850752 | biblioteca=0 | libro=2
+[2025-11-04 18:49:26.034] Lector-4 | devuelve_libro | lector=4 | hilo_id=6173503488 | biblioteca=1 | libro=1
+[2025-11-04 18:49:26.034] Lector-4 | cambia_biblioteca | lector=4 | hilo_id=6173503488 | siguiente=2
+[2025-11-04 18:49:26.034] Lector-4 | obtiene_libro | lector=4 | hilo_id=6173503488 | biblioteca=2 | libro=0
+[2025-11-04 18:49:26.039] Lector-9 | devuelve_libro | lector=9 | hilo_id=6257635328 | biblioteca=0 | libro=3
+[2025-11-04 18:49:26.040] Lector-9 | cambia_biblioteca | lector=9 | hilo_id=6257635328 | siguiente=1
+[2025-11-04 18:49:26.040] Lector-9 | obtiene_libro | lector=9 | hilo_id=6257635328 | biblioteca=1 | libro=1
+[2025-11-04 18:49:26.067] Lector-3 | devuelve_libro | lector=3 | hilo_id=6156677120 | biblioteca=0 | libro=1
+[2025-11-04 18:49:26.067] Lector-3 | cambia_biblioteca | lector=3 | hilo_id=6156677120 | siguiente=1
+[2025-11-04 18:49:26.067] Lector-3 | obtiene_libro | lector=3 | hilo_id=6156677120 | biblioteca=1 | libro=4
+[2025-11-04 18:49:26.881] Lector-7 | devuelve_libro | lector=7 | hilo_id=6223982592 | biblioteca=1 | libro=2
+[2025-11-04 18:49:26.882] Lector-7 | cambia_biblioteca | lector=7 | hilo_id=6223982592 | siguiente=2
+[2025-11-04 18:49:26.882] Lector-7 | obtiene_libro | lector=7 | hilo_id=6223982592 | biblioteca=2 | libro=3
+[2025-11-04 18:49:27.114] Lector-1 | devuelve_libro | lector=1 | hilo_id=6123024384 | biblioteca=1 | libro=0
+[2025-11-04 18:49:27.114] Lector-1 | cambia_biblioteca | lector=1 | hilo_id=6123024384 | siguiente=2
+[2025-11-04 18:49:27.114] Lector-1 | obtiene_libro | lector=1 | hilo_id=6123024384 | biblioteca=2 | libro=4
+[2025-11-04 18:49:27.116] Lector-8 | devuelve_libro | lector=8 | hilo_id=6240808960 | biblioteca=2 | libro=2
+[2025-11-04 18:49:27.116] Lector-8 | cambia_biblioteca | lector=8 | hilo_id=6240808960 | siguiente=0
+[2025-11-04 18:49:27.116] Lector-8 | obtiene_libro | lector=8 | hilo_id=6240808960 | biblioteca=0 | libro=1
+[2025-11-04 18:49:27.285] Lector-5 | devuelve_libro | lector=5 | hilo_id=6190329856 | biblioteca=2 | libro=1
+[2025-11-04 18:49:27.285] Lector-5 | cambia_biblioteca | lector=5 | hilo_id=6190329856 | siguiente=0
+[2025-11-04 18:49:27.285] Lector-5 | obtiene_libro | lector=5 | hilo_id=6190329856 | biblioteca=0 | libro=3
+[2025-11-04 18:49:27.501] Lector-0 | devuelve_libro | lector=0 | hilo_id=6106198016 | biblioteca=0 | libro=0
+[2025-11-04 18:49:27.501] Lector-0 | cambia_biblioteca | lector=0 | hilo_id=6106198016 | siguiente=1
+[2025-11-04 18:49:27.502] Lector-0 | obtiene_libro | lector=0 | hilo_id=6106198016 | biblioteca=1 | libro=0
+[2025-11-04 18:49:27.743] Lector-4 | devuelve_libro | lector=4 | hilo_id=6173503488 | biblioteca=2 | libro=0
+[2025-11-04 18:49:27.743] Lector-4 | cambia_biblioteca | lector=4 | hilo_id=6173503488 | siguiente=0
+[2025-11-04 18:49:27.744] Lector-4 | obtiene_libro | lector=4 | hilo_id=6173503488 | biblioteca=0 | libro=0
+[2025-11-04 18:49:27.994] Lector-9 | devuelve_libro | lector=9 | hilo_id=6257635328 | biblioteca=1 | libro=1
+[2025-11-04 18:49:27.994] Lector-9 | cambia_biblioteca | lector=9 | hilo_id=6257635328 | siguiente=2
+[2025-11-04 18:49:27.994] Lector-9 | obtiene_libro | lector=9 | hilo_id=6257635328 | biblioteca=2 | libro=0
+[2025-11-04 18:49:28.376] Lector-5 | devuelve_libro | lector=5 | hilo_id=6190329856 | biblioteca=0 | libro=3
+[2025-11-04 18:49:28.376] Lector-5 | cambia_biblioteca | lector=5 | hilo_id=6190329856 | siguiente=1
+[2025-11-04 18:49:28.376] Lector-5 | obtiene_libro | lector=5 | hilo_id=6190329856 | biblioteca=1 | libro=1
+[2025-11-04 18:49:28.509] Lector-8 | devuelve_libro | lector=8 | hilo_id=6240808960 | biblioteca=0 | libro=1
+[2025-11-04 18:49:28.509] Lector-8 | cambia_biblioteca | lector=8 | hilo_id=6240808960 | siguiente=1
+[2025-11-04 18:49:28.509] Lector-8 | obtiene_libro | lector=8 | hilo_id=6240808960 | biblioteca=1 | libro=2
+[2025-11-04 18:49:28.541] Lector-3 | devuelve_libro | lector=3 | hilo_id=6156677120 | biblioteca=1 | libro=4
+[2025-11-04 18:49:28.542] Lector-3 | cambia_biblioteca | lector=3 | hilo_id=6156677120 | siguiente=2
+[2025-11-04 18:49:28.542] Lector-3 | obtiene_libro | lector=3 | hilo_id=6156677120 | biblioteca=2 | libro=1
+[2025-11-04 18:49:28.618] Lector-6 | devuelve_libro | lector=6 | hilo_id=6207156224 | biblioteca=1 | libro=3
+[2025-11-04 18:49:28.618] Lector-6 | cambia_biblioteca | lector=6 | hilo_id=6207156224 | siguiente=2
+[2025-11-04 18:49:28.618] Lector-6 | obtiene_libro | lector=6 | hilo_id=6207156224 | biblioteca=2 | libro=2
+[2025-11-04 18:49:28.832] Lector-1 | devuelve_libro | lector=1 | hilo_id=6123024384 | biblioteca=2 | libro=4
+[2025-11-04 18:49:28.833] Lector-1 | cambia_biblioteca | lector=1 | hilo_id=6123024384 | siguiente=0
+[2025-11-04 18:49:28.833] Lector-1 | obtiene_libro | lector=1 | hilo_id=6123024384 | biblioteca=0 | libro=1
+[2025-11-04 18:49:28.924] Lector-2 | devuelve_libro | lector=2 | hilo_id=6139850752 | biblioteca=0 | libro=2
+[2025-11-04 18:49:28.924] Lector-2 | cambia_biblioteca | lector=2 | hilo_id=6139850752 | siguiente=1
+[2025-11-04 18:49:28.924] Lector-2 | obtiene_libro | lector=2 | hilo_id=6139850752 | biblioteca=1 | libro=3
+[2025-11-04 18:49:29.326] Lector-0 | devuelve_libro | lector=0 | hilo_id=6106198016 | biblioteca=1 | libro=0
+[2025-11-04 18:49:29.326] Lector-0 | cambia_biblioteca | lector=0 | hilo_id=6106198016 | siguiente=2
+[2025-11-04 18:49:29.326] Lector-0 | obtiene_libro | lector=0 | hilo_id=6106198016 | biblioteca=2 | libro=4
+[2025-11-04 18:49:29.642] Lector-7 | devuelve_libro | lector=7 | hilo_id=6223982592 | biblioteca=2 | libro=3
+[2025-11-04 18:49:29.642] Lector-7 | cambia_biblioteca | lector=7 | hilo_id=6223982592 | siguiente=0
+[2025-11-04 18:49:29.642] Lector-7 | obtiene_libro | lector=7 | hilo_id=6223982592 | biblioteca=0 | libro=2
+[2025-11-04 18:49:29.859] Lector-6 | devuelve_libro | lector=6 | hilo_id=6207156224 | biblioteca=2 | libro=2
+[2025-11-04 18:49:29.859] Lector-6 | cambia_biblioteca | lector=6 | hilo_id=6207156224 | siguiente=0
+[2025-11-04 18:49:29.859] Lector-6 | obtiene_libro | lector=6 | hilo_id=6207156224 | biblioteca=0 | libro=3
+[2025-11-04 18:49:29.942] Lector-4 | devuelve_libro | lector=4 | hilo_id=6173503488 | biblioteca=0 | libro=0
+[2025-11-04 18:49:29.942] Lector-4 | cambia_biblioteca | lector=4 | hilo_id=6173503488 | siguiente=1
+[2025-11-04 18:49:29.942] Lector-4 | obtiene_libro | lector=4 | hilo_id=6173503488 | biblioteca=1 | libro=0
+[2025-11-04 18:49:29.959] Lector-8 | devuelve_libro | lector=8 | hilo_id=6240808960 | biblioteca=1 | libro=2
+[2025-11-04 18:49:29.959] Lector-8 | cambia_biblioteca | lector=8 | hilo_id=6240808960 | siguiente=2
+[2025-11-04 18:49:29.959] Lector-8 | obtiene_libro | lector=8 | hilo_id=6240808960 | biblioteca=2 | libro=2
+[2025-11-04 18:49:30.111] Lector-9 | devuelve_libro | lector=9 | hilo_id=6257635328 | biblioteca=2 | libro=0
+[2025-11-04 18:49:30.112] Lector-9 | cambia_biblioteca | lector=9 | hilo_id=6257635328 | siguiente=0
+[2025-11-04 18:49:30.112] Lector-9 | obtiene_libro | lector=9 | hilo_id=6257635328 | biblioteca=0 | libro=0
+[2025-11-04 18:49:30.314] Lector-2 | devuelve_libro | lector=2 | hilo_id=6139850752 | biblioteca=1 | libro=3
+[2025-11-04 18:49:30.314] Lector-2 | cambia_biblioteca | lector=2 | hilo_id=6139850752 | siguiente=2
+[2025-11-04 18:49:30.314] Lector-2 | obtiene_libro | lector=2 | hilo_id=6139850752 | biblioteca=2 | libro=0
+[2025-11-04 18:49:30.437] Lector-5 | devuelve_libro | lector=5 | hilo_id=6190329856 | biblioteca=1 | libro=1
+[2025-11-04 18:49:30.437] Lector-5 | cambia_biblioteca | lector=5 | hilo_id=6190329856 | siguiente=2
+[2025-11-04 18:49:30.437] Lector-5 | obtiene_libro | lector=5 | hilo_id=6190329856 | biblioteca=2 | libro=3
+[2025-11-04 18:49:30.756] Lector-7 | devuelve_libro | lector=7 | hilo_id=6223982592 | biblioteca=0 | libro=2
+[2025-11-04 18:49:30.756] Lector-7 | cambia_biblioteca | lector=7 | hilo_id=6223982592 | siguiente=1
+[2025-11-04 18:49:30.757] Lector-7 | obtiene_libro | lector=7 | hilo_id=6223982592 | biblioteca=1 | libro=1
+[2025-11-04 18:49:30.874] Lector-1 | devuelve_libro | lector=1 | hilo_id=6123024384 | biblioteca=0 | libro=1
+[2025-11-04 18:49:30.874] Lector-1 | cambia_biblioteca | lector=1 | hilo_id=6123024384 | siguiente=1
+[2025-11-04 18:49:30.875] Lector-1 | obtiene_libro | lector=1 | hilo_id=6123024384 | biblioteca=1 | libro=2
+[2025-11-04 18:49:30.897] Lector-6 | devuelve_libro | lector=6 | hilo_id=6207156224 | biblioteca=0 | libro=3
+[2025-11-04 18:49:30.897] Lector-6 | cambia_biblioteca | lector=6 | hilo_id=6207156224 | siguiente=1
+[2025-11-04 18:49:30.897] Lector-6 | obtiene_libro | lector=6 | hilo_id=6207156224 | biblioteca=1 | libro=3
+[2025-11-04 18:49:31.119] Lector-3 | devuelve_libro | lector=3 | hilo_id=6156677120 | biblioteca=2 | libro=1
+[2025-11-04 18:49:31.119] Lector-3 | cambia_biblioteca | lector=3 | hilo_id=6156677120 | siguiente=0
+[2025-11-04 18:49:31.120] Lector-3 | obtiene_libro | lector=3 | hilo_id=6156677120 | biblioteca=0 | libro=1
+[2025-11-04 18:49:31.218] Lector-9 | devuelve_libro | lector=9 | hilo_id=6257635328 | biblioteca=0 | libro=0
+[2025-11-04 18:49:31.218] Lector-9 | cambia_biblioteca | lector=9 | hilo_id=6257635328 | siguiente=1
+[2025-11-04 18:49:31.219] Lector-9 | obtiene_libro | lector=9 | hilo_id=6257635328 | biblioteca=1 | libro=4
+[2025-11-04 18:49:31.242] Lector-8 | devuelve_libro | lector=8 | hilo_id=6240808960 | biblioteca=2 | libro=2
+[2025-11-04 18:49:31.242] Lector-8 | cambia_biblioteca | lector=8 | hilo_id=6240808960 | siguiente=0
+[2025-11-04 18:49:31.242] Lector-8 | obtiene_libro | lector=8 | hilo_id=6240808960 | biblioteca=0 | libro=0
+[2025-11-04 18:49:31.602] Lector-0 | devuelve_libro | lector=0 | hilo_id=6106198016 | biblioteca=2 | libro=4
+[2025-11-04 18:49:31.602] Lector-0 | cambia_biblioteca | lector=0 | hilo_id=6106198016 | siguiente=0
+[2025-11-04 18:49:31.602] Lector-0 | obtiene_libro | lector=0 | hilo_id=6106198016 | biblioteca=0 | libro=2
+[2025-11-04 18:49:31.993] Lector-2 | devuelve_libro | lector=2 | hilo_id=6139850752 | biblioteca=2 | libro=0
+[2025-11-04 18:49:31.993] Lector-2 | cambia_biblioteca | lector=2 | hilo_id=6139850752 | siguiente=0
+[2025-11-04 18:49:31.993] Lector-2 | obtiene_libro | lector=2 | hilo_id=6139850752 | biblioteca=0 | libro=3
+[2025-11-04 18:49:32.362] Lector-5 | devuelve_libro | lector=5 | hilo_id=6190329856 | biblioteca=2 | libro=3
+[2025-11-04 18:49:32.363] Lector-5 | cambia_biblioteca | lector=5 | hilo_id=6190329856 | siguiente=0
+[2025-11-04 18:49:32.363] Lector-5 | obtiene_libro | lector=5 | hilo_id=6190329856 | biblioteca=0 | libro=4
+[2025-11-04 18:49:32.491] Lector-8 | devuelve_libro | lector=8 | hilo_id=6240808960 | biblioteca=0 | libro=0
+[2025-11-04 18:49:32.492] Lector-8 | cambia_biblioteca | lector=8 | hilo_id=6240808960 | siguiente=1
+[2025-11-04 18:49:32.492] Lector-8 | finaliza | lector=8 | hilo_id=6240808960 | biblioteca=1
+[2025-11-04 18:49:32.517] Lector-7 | devuelve_libro | lector=7 | hilo_id=6223982592 | biblioteca=1 | libro=1
+[2025-11-04 18:49:32.517] Lector-7 | cambia_biblioteca | lector=7 | hilo_id=6223982592 | siguiente=2
+[2025-11-04 18:49:32.518] Lector-7 | obtiene_libro | lector=7 | hilo_id=6223982592 | biblioteca=2 | libro=0
+[2025-11-04 18:49:32.725] Lector-1 | devuelve_libro | lector=1 | hilo_id=6123024384 | biblioteca=1 | libro=2
+[2025-11-04 18:49:32.725] Lector-1 | cambia_biblioteca | lector=1 | hilo_id=6123024384 | siguiente=2
+[2025-11-04 18:49:32.725] Lector-1 | obtiene_libro | lector=1 | hilo_id=6123024384 | biblioteca=2 | libro=1
+[2025-11-04 18:49:32.750] Lector-4 | devuelve_libro | lector=4 | hilo_id=6173503488 | biblioteca=1 | libro=0
+[2025-11-04 18:49:32.751] Lector-4 | cambia_biblioteca | lector=4 | hilo_id=6173503488 | siguiente=2
+[2025-11-04 18:49:32.751] Lector-4 | obtiene_libro | lector=4 | hilo_id=6173503488 | biblioteca=2 | libro=2
+[2025-11-04 18:49:32.813] Lector-9 | devuelve_libro | lector=9 | hilo_id=6257635328 | biblioteca=1 | libro=4
+[2025-11-04 18:49:32.813] Lector-9 | cambia_biblioteca | lector=9 | hilo_id=6257635328 | siguiente=2
+[2025-11-04 18:49:32.813] Lector-9 | finaliza | lector=9 | hilo_id=6257635328 | biblioteca=2
+[2025-11-04 18:49:32.813] principal | join_hilo | hilo=Lector-9
+[2025-11-04 18:49:32.813] principal | join_hilo | hilo=Lector-8
+[2025-11-04 18:49:33.098] Lector-0 | devuelve_libro | lector=0 | hilo_id=6106198016 | biblioteca=0 | libro=2
+[2025-11-04 18:49:33.098] Lector-0 | cambia_biblioteca | lector=0 | hilo_id=6106198016 | siguiente=1
+[2025-11-04 18:49:33.098] Lector-0 | obtiene_libro | lector=0 | hilo_id=6106198016 | biblioteca=1 | libro=0
+[2025-11-04 18:49:33.147] Lector-6 | devuelve_libro | lector=6 | hilo_id=6207156224 | biblioteca=1 | libro=3
+[2025-11-04 18:49:33.147] Lector-6 | cambia_biblioteca | lector=6 | hilo_id=6207156224 | siguiente=2
+[2025-11-04 18:49:33.147] Lector-6 | finaliza | lector=6 | hilo_id=6207156224 | biblioteca=2
+[2025-11-04 18:49:33.517] Lector-2 | devuelve_libro | lector=2 | hilo_id=6139850752 | biblioteca=0 | libro=3
+[2025-11-04 18:49:33.518] Lector-2 | cambia_biblioteca | lector=2 | hilo_id=6139850752 | siguiente=1
+[2025-11-04 18:49:33.518] Lector-2 | finaliza | lector=2 | hilo_id=6139850752 | biblioteca=1
+[2025-11-04 18:49:33.749] Lector-3 | devuelve_libro | lector=3 | hilo_id=6156677120 | biblioteca=0 | libro=1
+[2025-11-04 18:49:33.749] Lector-3 | cambia_biblioteca | lector=3 | hilo_id=6156677120 | siguiente=1
+[2025-11-04 18:49:33.749] Lector-3 | obtiene_libro | lector=3 | hilo_id=6156677120 | biblioteca=1 | libro=1
+[2025-11-04 18:49:33.869] Lector-7 | devuelve_libro | lector=7 | hilo_id=6223982592 | biblioteca=2 | libro=0
+[2025-11-04 18:49:33.869] Lector-7 | cambia_biblioteca | lector=7 | hilo_id=6223982592 | siguiente=0
+[2025-11-04 18:49:33.869] Lector-7 | finaliza | lector=7 | hilo_id=6223982592 | biblioteca=0
+[2025-11-04 18:49:33.869] principal | join_hilo | hilo=Lector-7
+[2025-11-04 18:49:33.870] principal | join_hilo | hilo=Lector-6
+[2025-11-04 18:49:34.091] Lector-4 | devuelve_libro | lector=4 | hilo_id=6173503488 | biblioteca=2 | libro=2
+[2025-11-04 18:49:34.092] Lector-4 | cambia_biblioteca | lector=4 | hilo_id=6173503488 | siguiente=0
+[2025-11-04 18:49:34.092] Lector-4 | finaliza | lector=4 | hilo_id=6173503488 | biblioteca=0
+[2025-11-04 18:49:34.286] Lector-1 | devuelve_libro | lector=1 | hilo_id=6123024384 | biblioteca=2 | libro=1
+[2025-11-04 18:49:34.286] Lector-1 | cambia_biblioteca | lector=1 | hilo_id=6123024384 | siguiente=0
+[2025-11-04 18:49:34.286] Lector-1 | finaliza | lector=1 | hilo_id=6123024384 | biblioteca=0
+[2025-11-04 18:49:34.944] Lector-5 | devuelve_libro | lector=5 | hilo_id=6190329856 | biblioteca=0 | libro=4
+[2025-11-04 18:49:34.944] Lector-5 | cambia_biblioteca | lector=5 | hilo_id=6190329856 | siguiente=1
+[2025-11-04 18:49:34.944] Lector-5 | finaliza | lector=5 | hilo_id=6190329856 | biblioteca=1
+[2025-11-04 18:49:34.944] principal | join_hilo | hilo=Lector-5
+[2025-11-04 18:49:34.944] principal | join_hilo | hilo=Lector-4
+[2025-11-04 18:49:35.259] Lector-3 | devuelve_libro | lector=3 | hilo_id=6156677120 | biblioteca=1 | libro=1
+[2025-11-04 18:49:35.259] Lector-3 | cambia_biblioteca | lector=3 | hilo_id=6156677120 | siguiente=2
+[2025-11-04 18:49:35.259] Lector-3 | finaliza | lector=3 | hilo_id=6156677120 | biblioteca=2
+[2025-11-04 18:49:35.259] principal | join_hilo | hilo=Lector-3
+[2025-11-04 18:49:35.260] principal | join_hilo | hilo=Lector-2
+[2025-11-04 18:49:35.260] principal | join_hilo | hilo=Lector-1
+[2025-11-04 18:49:35.850] Lector-0 | devuelve_libro | lector=0 | hilo_id=6106198016 | biblioteca=1 | libro=0
+[2025-11-04 18:49:35.850] Lector-0 | cambia_biblioteca | lector=0 | hilo_id=6106198016 | siguiente=2
+[2025-11-04 18:49:35.850] Lector-0 | finaliza | lector=0 | hilo_id=6106198016 | biblioteca=2
+[2025-11-04 18:49:35.850] principal | join_hilo | hilo=Lector-0
+[2025-11-04 18:49:35.850] principal | fin_simulacion | Todos los lectores han terminado

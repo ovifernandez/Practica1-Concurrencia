@@ -1,0 +1,35 @@
+[2025-11-04 18:12:01.264] principal (id=0x1f3dfc800) | inicio | Preparación de hilos de búsqueda
+[2025-11-04 18:12:01.265] Segmento-1 (id=0x16b40b000) | inicio | idx=0 | Comienza la búsqueda en posiciones 1 a 5
+[2025-11-04 18:12:01.266] Segmento-2 (id=0x16b497000) | inicio | idx=5 | Comienza la búsqueda en posiciones 6 a 10
+[2025-11-04 18:12:01.266] Segmento-2 (id=0x16b497000) | iteracion | idx=5 | Comparando posición 6: valor=15 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-2 (id=0x16b497000) | iteracion | idx=6 | Comparando posición 7: valor=20 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-2 (id=0x16b497000) | iteracion | idx=7 | Comparando posición 8: valor=8 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-3 (id=0x16b523000) | inicio | idx=10 | Comienza la búsqueda en posiciones 11 a 15
+[2025-11-04 18:12:01.266] Segmento-3 (id=0x16b523000) | iteracion | idx=10 | Comparando posición 11: valor=14 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-3 (id=0x16b523000) | iteracion | idx=11 | Comparando posición 12: valor=2 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-3 (id=0x16b523000) | iteracion | idx=12 | Comparando posición 13: valor=19 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-3 (id=0x16b523000) | iteracion | idx=13 | Comparando posición 14: valor=4 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-3 (id=0x16b523000) | iteracion | idx=14 | Comparando posición 15: valor=1 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-3 (id=0x16b523000) | coincidencia | idx=14 | Coincidencia en posición 15 (valor=1)
+[2025-11-04 18:12:01.266] Segmento-3 (id=0x16b523000) | fin | idx=14 | Finaliza la búsqueda en posiciones 11 a 15
+[2025-11-04 18:12:01.266] Segmento-4 (id=0x16b5af000) | inicio | idx=15 | Comienza la búsqueda en posiciones 16 a 20
+[2025-11-04 18:12:01.266] Segmento-4 (id=0x16b5af000) | iteracion | idx=15 | Comparando posición 16: valor=1 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-4 (id=0x16b5af000) | coincidencia | idx=15 | Coincidencia en posición 16 (valor=1)
+[2025-11-04 18:12:01.266] Segmento-1 (id=0x16b40b000) | iteracion | idx=0 | Comparando posición 1: valor=5 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-1 (id=0x16b40b000) | iteracion | idx=1 | Comparando posición 2: valor=12 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-1 (id=0x16b40b000) | iteracion | idx=2 | Comparando posición 3: valor=7 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-1 (id=0x16b40b000) | iteracion | idx=3 | Comparando posición 4: valor=3 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-1 (id=0x16b40b000) | iteracion | idx=4 | Comparando posición 5: valor=9 con objetivo=1
+[2025-11-04 18:12:01.266] principal (id=0x1f3dfc800) | creacion | Hilos lanzados correctamente
+[2025-11-04 18:12:01.266] Segmento-2 (id=0x16b497000) | iteracion | idx=8 | Comparando posición 9: valor=19 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-2 (id=0x16b497000) | iteracion | idx=9 | Comparando posición 10: valor=6 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-2 (id=0x16b497000) | fin | idx=9 | Finaliza la búsqueda en posiciones 6 a 10
+[2025-11-04 18:12:01.266] Segmento-1 (id=0x16b40b000) | fin | idx=4 | Finaliza la búsqueda en posiciones 1 a 5
+[2025-11-04 18:12:01.266] Segmento-4 (id=0x16b5af000) | iteracion | idx=16 | Comparando posición 17: valor=17 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-4 (id=0x16b5af000) | iteracion | idx=17 | Comparando posición 18: valor=19 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-4 (id=0x16b5af000) | iteracion | idx=18 | Comparando posición 19: valor=13 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-4 (id=0x16b5af000) | iteracion | idx=19 | Comparando posición 20: valor=16 con objetivo=1
+[2025-11-04 18:12:01.266] Segmento-4 (id=0x16b5af000) | fin | idx=19 | Finaliza la búsqueda en posiciones 16 a 20
+[2025-11-04 18:12:01.266] principal (id=0x1f3dfc800) | sincronizacion | Todos los hilos han finalizado
+[2025-11-04 18:12:01.266] principal (id=0x1f3dfc800) | resultado | Impresión del resultado final
+[2025-11-04 18:12:02.564] principal (id=0x1f3dfc800) | fin | Programa finalizado

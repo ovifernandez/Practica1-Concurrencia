@@ -1,0 +1,19 @@
+[2025-11-04 18:10:40.574] principal (id=0x1f3dfc800) | inicio | Inicio de creación de hilos
+[2025-11-04 18:10:40.575] Fila-1 (id=0x16d377000) | inicio | fila=1 | Comienza el cálculo de la fila 1 (columnas 1..3)
+[2025-11-04 18:10:40.575] Fila-1 (id=0x16d377000) | iteracion | fila=1 | Sumando fila 1, columna 1: 1 + 11 = 12
+[2025-11-04 18:10:40.575] Fila-1 (id=0x16d377000) | iteracion | fila=2 | Sumando fila 1, columna 2: 2 + 12 = 14
+[2025-11-04 18:10:40.575] Fila-1 (id=0x16d377000) | iteracion | fila=3 | Sumando fila 1, columna 3: 3 + 13 = 16
+[2025-11-04 18:10:40.575] Fila-1 (id=0x16d377000) | fin | fila=1 | Finaliza el cálculo de la fila 1
+[2025-11-04 18:10:40.575] principal (id=0x1f3dfc800) | creacion | Hilos lanzados correctamente
+[2025-11-04 18:10:40.575] Fila-3 (id=0x16d48f000) | inicio | fila=3 | Comienza el cálculo de la fila 3 (columnas 1..3)
+[2025-11-04 18:10:40.575] Fila-3 (id=0x16d48f000) | iteracion | fila=1 | Sumando fila 3, columna 1: 7 + 17 = 24
+[2025-11-04 18:10:40.575] Fila-3 (id=0x16d48f000) | iteracion | fila=2 | Sumando fila 3, columna 2: 8 + 18 = 26
+[2025-11-04 18:10:40.575] Fila-3 (id=0x16d48f000) | iteracion | fila=3 | Sumando fila 3, columna 3: 9 + 19 = 28
+[2025-11-04 18:10:40.575] Fila-3 (id=0x16d48f000) | fin | fila=3 | Finaliza el cálculo de la fila 3
+[2025-11-04 18:10:40.575] Fila-2 (id=0x16d403000) | inicio | fila=2 | Comienza el cálculo de la fila 2 (columnas 1..3)
+[2025-11-04 18:10:40.575] Fila-2 (id=0x16d403000) | iteracion | fila=1 | Sumando fila 2, columna 1: 4 + 14 = 18
+[2025-11-04 18:10:40.575] Fila-2 (id=0x16d403000) | iteracion | fila=2 | Sumando fila 2, columna 2: 5 + 15 = 20
+[2025-11-04 18:10:40.575] Fila-2 (id=0x16d403000) | iteracion | fila=3 | Sumando fila 2, columna 3: 6 + 16 = 22
+[2025-11-04 18:10:40.575] Fila-2 (id=0x16d403000) | fin | fila=2 | Finaliza el cálculo de la fila 2
+[2025-11-04 18:10:40.575] principal (id=0x1f3dfc800) | sincronizacion | Finalizada la espera de hilos
+[2025-11-04 18:10:51.709] principal (id=0x1f3dfc800) | fin | Programa finalizado correctamente

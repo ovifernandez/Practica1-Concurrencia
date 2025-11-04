@@ -1,0 +1,44 @@
+[2025-11-04 18:43:11.922] principal | inicio | Preparando lectura de matrices
+[2025-11-04 18:43:13.819] principal | entrada | matriz=A | fila=1 | columna=1 | valor=1
+[2025-11-04 18:43:14.164] principal | entrada | matriz=A | fila=1 | columna=2 | valor=2
+[2025-11-04 18:43:14.510] principal | entrada | matriz=A | fila=1 | columna=3 | valor=3
+[2025-11-04 18:43:14.886] principal | entrada | matriz=A | fila=2 | columna=1 | valor=4
+[2025-11-04 18:43:15.247] principal | entrada | matriz=A | fila=2 | columna=2 | valor=5
+[2025-11-04 18:43:15.603] principal | entrada | matriz=A | fila=2 | columna=3 | valor=6
+[2025-11-04 18:43:15.968] principal | entrada | matriz=A | fila=3 | columna=1 | valor=7
+[2025-11-04 18:43:16.309] principal | entrada | matriz=A | fila=3 | columna=2 | valor=8
+[2025-11-04 18:43:16.674] principal | entrada | matriz=A | fila=3 | columna=3 | valor=9
+[2025-11-04 18:43:16.675] principal | matriz_completa | matriz=A | datos=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+[2025-11-04 18:43:17.574] principal | entrada | matriz=B | fila=1 | columna=1 | valor=11
+[2025-11-04 18:43:18.183] principal | entrada | matriz=B | fila=1 | columna=2 | valor=12
+[2025-11-04 18:43:18.761] principal | entrada | matriz=B | fila=1 | columna=3 | valor=13
+[2025-11-04 18:43:19.468] principal | entrada | matriz=B | fila=2 | columna=1 | valor=14
+[2025-11-04 18:43:20.413] principal | entrada | matriz=B | fila=2 | columna=2 | valor=15
+[2025-11-04 18:43:21.245] principal | entrada | matriz=B | fila=2 | columna=3 | valor=16
+[2025-11-04 18:43:22.258] principal | entrada | matriz=B | fila=3 | columna=1 | valor=17
+[2025-11-04 18:43:23.195] principal | entrada | matriz=B | fila=3 | columna=2 | valor=18
+[2025-11-04 18:43:24.063] principal | entrada | matriz=B | fila=3 | columna=3 | valor=19
+[2025-11-04 18:43:24.063] principal | matriz_completa | matriz=B | datos=[[11, 12, 13], [14, 15, 16], [17, 18, 19]]
+[2025-11-04 18:43:24.063] Fila-1 | inicio | fila=1 | hilo_id=6113980416 | datos_A=[1, 2, 3] | datos_B=[11, 12, 13]
+[2025-11-04 18:43:24.064] Fila-1 | iteracion | fila=1 | columna=1 | hilo_id=6113980416 | 1 + 11 = 12
+[2025-11-04 18:43:24.064] Fila-1 | iteracion | fila=1 | columna=2 | hilo_id=6113980416 | 2 + 12 = 14
+[2025-11-04 18:43:24.064] Fila-1 | iteracion | fila=1 | columna=3 | hilo_id=6113980416 | 3 + 13 = 16
+[2025-11-04 18:43:24.064] Fila-1 | fin | fila=1 | hilo_id=6113980416 | resultado=[12, 14, 16]
+[2025-11-04 18:43:24.064] principal | creacion_hilo | Lanzado Fila-1
+[2025-11-04 18:43:24.064] Fila-2 | inicio | fila=2 | hilo_id=6130806784 | datos_A=[4, 5, 6] | datos_B=[14, 15, 16]
+[2025-11-04 18:43:24.064] Fila-2 | iteracion | fila=2 | columna=1 | hilo_id=6130806784 | 4 + 14 = 18
+[2025-11-04 18:43:24.064] Fila-2 | iteracion | fila=2 | columna=2 | hilo_id=6130806784 | 5 + 15 = 20
+[2025-11-04 18:43:24.064] Fila-2 | iteracion | fila=2 | columna=3 | hilo_id=6130806784 | 6 + 16 = 22
+[2025-11-04 18:43:24.064] Fila-2 | fin | fila=2 | hilo_id=6130806784 | resultado=[18, 20, 22]
+[2025-11-04 18:43:24.064] principal | creacion_hilo | Lanzado Fila-2
+[2025-11-04 18:43:24.064] Fila-3 | inicio | fila=3 | hilo_id=6147633152 | datos_A=[7, 8, 9] | datos_B=[17, 18, 19]
+[2025-11-04 18:43:24.064] Fila-3 | iteracion | fila=3 | columna=1 | hilo_id=6147633152 | 7 + 17 = 24
+[2025-11-04 18:43:24.064] Fila-3 | iteracion | fila=3 | columna=2 | hilo_id=6147633152 | 8 + 18 = 26
+[2025-11-04 18:43:24.064] Fila-3 | iteracion | fila=3 | columna=3 | hilo_id=6147633152 | 9 + 19 = 28
+[2025-11-04 18:43:24.064] Fila-3 | fin | fila=3 | hilo_id=6147633152 | resultado=[24, 26, 28]
+[2025-11-04 18:43:24.064] principal | creacion_hilo | Lanzado Fila-3
+[2025-11-04 18:43:24.064] principal | join_hilo | Finalizado Fila-3
+[2025-11-04 18:43:24.064] principal | join_hilo | Finalizado Fila-2
+[2025-11-04 18:43:24.065] principal | join_hilo | Finalizado Fila-1
+[2025-11-04 18:43:24.065] principal | resultado | matriz=[[12, 14, 16], [18, 20, 22], [24, 26, 28]]
+[2025-11-04 18:43:24.065] principal | fin | Programa completado

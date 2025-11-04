@@ -1,0 +1,192 @@
+[2025-11-04 18:49:48.295] lector=-1 | inicio_simulacion
+[2025-11-04 18:49:48.296] lector=0 | biblioteca=0 | hilo_creado
+[2025-11-04 18:49:48.296] lector=0 | biblioteca=0 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=1 | biblioteca=1 | hilo_creado
+[2025-11-04 18:49:48.296] lector=1 | biblioteca=1 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=2 | biblioteca=2 | hilo_creado
+[2025-11-04 18:49:48.296] lector=2 | biblioteca=2 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=3 | biblioteca=0 | hilo_creado
+[2025-11-04 18:49:48.296] lector=1 | biblioteca=1 | libro=0 | obtiene libro | hilo=0x16f96f000
+[2025-11-04 18:49:48.296] lector=4 | biblioteca=1 | hilo_creado
+[2025-11-04 18:49:48.296] lector=4 | biblioteca=1 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=0 | biblioteca=0 | libro=0 | obtiene libro | hilo=0x16f8e3000
+[2025-11-04 18:49:48.296] lector=3 | biblioteca=0 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=3 | biblioteca=0 | libro=1 | obtiene libro | hilo=0x16fa87000
+[2025-11-04 18:49:48.296] lector=4 | biblioteca=1 | libro=1 | obtiene libro | hilo=0x16fb13000
+[2025-11-04 18:49:48.296] lector=5 | biblioteca=2 | hilo_creado
+[2025-11-04 18:49:48.296] lector=5 | biblioteca=2 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=6 | biblioteca=0 | hilo_creado
+[2025-11-04 18:49:48.296] lector=2 | biblioteca=2 | libro=0 | obtiene libro | hilo=0x16f9fb000
+[2025-11-04 18:49:48.296] lector=6 | biblioteca=0 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=5 | biblioteca=2 | libro=1 | obtiene libro | hilo=0x16fb9f000
+[2025-11-04 18:49:48.296] lector=7 | biblioteca=1 | hilo_creado
+[2025-11-04 18:49:48.296] lector=6 | biblioteca=0 | libro=2 | obtiene libro | hilo=0x16fc2b000
+[2025-11-04 18:49:48.296] lector=8 | biblioteca=2 | hilo_creado
+[2025-11-04 18:49:48.296] lector=7 | biblioteca=1 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=7 | biblioteca=1 | libro=2 | obtiene libro | hilo=0x16fcb7000
+[2025-11-04 18:49:48.296] lector=8 | biblioteca=2 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=8 | biblioteca=2 | libro=2 | obtiene libro | hilo=0x16fd43000
+[2025-11-04 18:49:48.296] lector=9 | biblioteca=0 | inicio | entra en biblioteca inicial
+[2025-11-04 18:49:48.296] lector=9 | biblioteca=0 | libro=3 | obtiene libro | hilo=0x16fdcf000
+[2025-11-04 18:49:48.296] lector=9 | biblioteca=0 | hilo_creado
+[2025-11-04 18:49:49.301] lector=3 | biblioteca=0 | libro=1 | devuelve libro | hilo=0x16fa87000
+[2025-11-04 18:49:49.301] lector=3 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fa87000
+[2025-11-04 18:49:49.301] lector=2 | biblioteca=2 | libro=0 | devuelve libro | hilo=0x16f9fb000
+[2025-11-04 18:49:49.301] lector=2 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16f9fb000
+[2025-11-04 18:49:49.301] lector=1 | biblioteca=1 | libro=0 | devuelve libro | hilo=0x16f96f000
+[2025-11-04 18:49:49.301] lector=1 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16f96f000
+[2025-11-04 18:49:49.301] lector=1 | biblioteca=2 | libro=0 | obtiene libro | hilo=0x16f96f000
+[2025-11-04 18:49:49.301] lector=8 | biblioteca=2 | libro=2 | devuelve libro | hilo=0x16fd43000
+[2025-11-04 18:49:49.301] lector=8 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fd43000
+[2025-11-04 18:49:49.301] lector=9 | biblioteca=0 | libro=3 | devuelve libro | hilo=0x16fdcf000
+[2025-11-04 18:49:49.301] lector=9 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fdcf000
+[2025-11-04 18:49:49.301] lector=4 | biblioteca=1 | libro=1 | devuelve libro | hilo=0x16fb13000
+[2025-11-04 18:49:49.302] lector=2 | biblioteca=0 | libro=1 | obtiene libro | hilo=0x16f9fb000
+[2025-11-04 18:49:49.302] lector=7 | biblioteca=1 | libro=2 | devuelve libro | hilo=0x16fcb7000
+[2025-11-04 18:49:49.302] lector=8 | biblioteca=0 | libro=3 | obtiene libro | hilo=0x16fd43000
+[2025-11-04 18:49:49.302] lector=3 | biblioteca=1 | libro=0 | obtiene libro | hilo=0x16fa87000
+[2025-11-04 18:49:49.302] lector=4 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fb13000
+[2025-11-04 18:49:49.302] lector=4 | biblioteca=2 | libro=2 | obtiene libro | hilo=0x16fb13000
+[2025-11-04 18:49:49.302] lector=9 | biblioteca=1 | libro=1 | obtiene libro | hilo=0x16fdcf000
+[2025-11-04 18:49:49.302] lector=7 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fcb7000
+[2025-11-04 18:49:49.302] lector=7 | biblioteca=2 | libro=3 | obtiene libro | hilo=0x16fcb7000
+[2025-11-04 18:49:50.300] lector=5 | biblioteca=2 | libro=1 | devuelve libro | hilo=0x16fb9f000
+[2025-11-04 18:49:50.300] lector=5 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fb9f000
+[2025-11-04 18:49:50.300] lector=0 | biblioteca=0 | libro=0 | devuelve libro | hilo=0x16f8e3000
+[2025-11-04 18:49:50.300] lector=0 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16f8e3000
+[2025-11-04 18:49:50.300] lector=5 | biblioteca=0 | libro=0 | obtiene libro | hilo=0x16fb9f000
+[2025-11-04 18:49:50.300] lector=0 | biblioteca=1 | libro=2 | obtiene libro | hilo=0x16f8e3000
+[2025-11-04 18:49:50.301] lector=6 | biblioteca=0 | libro=2 | devuelve libro | hilo=0x16fc2b000
+[2025-11-04 18:49:50.301] lector=6 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fc2b000
+[2025-11-04 18:49:50.301] lector=6 | biblioteca=1 | libro=3 | obtiene libro | hilo=0x16fc2b000
+[2025-11-04 18:49:50.303] lector=2 | biblioteca=0 | libro=1 | devuelve libro | hilo=0x16f9fb000
+[2025-11-04 18:49:50.303] lector=2 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16f9fb000
+[2025-11-04 18:49:50.303] lector=3 | biblioteca=1 | libro=0 | devuelve libro | hilo=0x16fa87000
+[2025-11-04 18:49:50.303] lector=4 | biblioteca=2 | libro=2 | devuelve libro | hilo=0x16fb13000
+[2025-11-04 18:49:50.303] lector=4 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fb13000
+[2025-11-04 18:49:50.303] lector=8 | biblioteca=0 | libro=3 | devuelve libro | hilo=0x16fd43000
+[2025-11-04 18:49:50.303] lector=8 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fd43000
+[2025-11-04 18:49:50.303] lector=3 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fa87000
+[2025-11-04 18:49:50.304] lector=3 | biblioteca=2 | libro=1 | obtiene libro | hilo=0x16fa87000
+[2025-11-04 18:49:50.304] lector=4 | biblioteca=0 | libro=1 | obtiene libro | hilo=0x16fb13000
+[2025-11-04 18:49:50.303] lector=2 | biblioteca=1 | libro=0 | obtiene libro | hilo=0x16f9fb000
+[2025-11-04 18:49:50.304] lector=8 | biblioteca=1 | libro=4 | obtiene libro | hilo=0x16fd43000
+[2025-11-04 18:49:50.306] lector=9 | biblioteca=1 | libro=1 | devuelve libro | hilo=0x16fdcf000
+[2025-11-04 18:49:50.306] lector=9 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fdcf000
+[2025-11-04 18:49:50.306] lector=9 | biblioteca=2 | libro=2 | obtiene libro | hilo=0x16fdcf000
+[2025-11-04 18:49:50.307] lector=7 | biblioteca=2 | libro=3 | devuelve libro | hilo=0x16fcb7000
+[2025-11-04 18:49:50.307] lector=7 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fcb7000
+[2025-11-04 18:49:50.307] lector=7 | biblioteca=0 | libro=2 | obtiene libro | hilo=0x16fcb7000
+[2025-11-04 18:49:51.301] lector=5 | biblioteca=0 | libro=0 | devuelve libro | hilo=0x16fb9f000
+[2025-11-04 18:49:51.301] lector=5 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fb9f000
+[2025-11-04 18:49:51.301] lector=5 | biblioteca=1 | libro=1 | obtiene libro | hilo=0x16fb9f000
+[2025-11-04 18:49:51.305] lector=1 | biblioteca=2 | libro=0 | devuelve libro | hilo=0x16f96f000
+[2025-11-04 18:49:51.305] lector=1 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16f96f000
+[2025-11-04 18:49:51.305] lector=1 | biblioteca=0 | libro=0 | obtiene libro | hilo=0x16f96f000
+[2025-11-04 18:49:51.307] lector=2 | biblioteca=1 | libro=0 | devuelve libro | hilo=0x16f9fb000
+[2025-11-04 18:49:51.307] lector=2 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16f9fb000
+[2025-11-04 18:49:51.307] lector=2 | biblioteca=2 | libro=0 | obtiene libro | hilo=0x16f9fb000
+[2025-11-04 18:49:51.307] lector=8 | biblioteca=1 | libro=4 | devuelve libro | hilo=0x16fd43000
+[2025-11-04 18:49:51.307] lector=8 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fd43000
+[2025-11-04 18:49:51.307] lector=8 | biblioteca=2 | libro=3 | obtiene libro | hilo=0x16fd43000
+[2025-11-04 18:49:51.309] lector=7 | biblioteca=0 | libro=2 | devuelve libro | hilo=0x16fcb7000
+[2025-11-04 18:49:51.309] lector=7 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fcb7000
+[2025-11-04 18:49:51.309] lector=7 | biblioteca=1 | libro=0 | obtiene libro | hilo=0x16fcb7000
+[2025-11-04 18:49:52.304] lector=0 | biblioteca=1 | libro=2 | devuelve libro | hilo=0x16f8e3000
+[2025-11-04 18:49:52.304] lector=3 | biblioteca=2 | libro=1 | devuelve libro | hilo=0x16fa87000
+[2025-11-04 18:49:52.304] lector=6 | biblioteca=1 | libro=3 | devuelve libro | hilo=0x16fc2b000
+[2025-11-04 18:49:52.304] lector=6 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fc2b000
+[2025-11-04 18:49:52.304] lector=4 | biblioteca=0 | libro=1 | devuelve libro | hilo=0x16fb13000
+[2025-11-04 18:49:52.304] lector=4 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fb13000
+[2025-11-04 18:49:52.304] lector=4 | biblioteca=1 | libro=2 | obtiene libro | hilo=0x16fb13000
+[2025-11-04 18:49:52.304] lector=6 | biblioteca=2 | libro=1 | obtiene libro | hilo=0x16fc2b000
+[2025-11-04 18:49:52.304] lector=3 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fa87000
+[2025-11-04 18:49:52.304] lector=3 | biblioteca=0 | libro=1 | obtiene libro | hilo=0x16fa87000
+[2025-11-04 18:49:52.304] lector=0 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16f8e3000
+[2025-11-04 18:49:52.304] lector=0 | biblioteca=2 | libro=4 | obtiene libro | hilo=0x16f8e3000
+[2025-11-04 18:49:52.310] lector=9 | biblioteca=2 | libro=2 | devuelve libro | hilo=0x16fdcf000
+[2025-11-04 18:49:52.310] lector=9 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fdcf000
+[2025-11-04 18:49:52.310] lector=8 | biblioteca=2 | libro=3 | devuelve libro | hilo=0x16fd43000
+[2025-11-04 18:49:52.310] lector=8 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fd43000
+[2025-11-04 18:49:52.310] lector=9 | biblioteca=0 | libro=2 | obtiene libro | hilo=0x16fdcf000
+[2025-11-04 18:49:52.310] lector=8 | biblioteca=0 | libro=3 | obtiene libro | hilo=0x16fd43000
+[2025-11-04 18:49:53.306] lector=5 | biblioteca=1 | libro=1 | devuelve libro | hilo=0x16fb9f000
+[2025-11-04 18:49:53.306] lector=5 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fb9f000
+[2025-11-04 18:49:53.306] lector=5 | biblioteca=2 | libro=2 | obtiene libro | hilo=0x16fb9f000
+[2025-11-04 18:49:53.309] lector=0 | biblioteca=2 | libro=4 | devuelve libro | hilo=0x16f8e3000
+[2025-11-04 18:49:53.309] lector=0 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16f8e3000
+[2025-11-04 18:49:53.309] lector=0 | biblioteca=0 | libro=4 | obtiene libro | hilo=0x16f8e3000
+[2025-11-04 18:49:53.309] lector=3 | biblioteca=0 | libro=1 | devuelve libro | hilo=0x16fa87000
+[2025-11-04 18:49:53.309] lector=3 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fa87000
+[2025-11-04 18:49:53.309] lector=3 | biblioteca=1 | libro=1 | obtiene libro | hilo=0x16fa87000
+[2025-11-04 18:49:53.310] lector=1 | biblioteca=0 | libro=0 | devuelve libro | hilo=0x16f96f000
+[2025-11-04 18:49:53.310] lector=1 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16f96f000
+[2025-11-04 18:49:53.310] lector=2 | biblioteca=2 | libro=0 | devuelve libro | hilo=0x16f9fb000
+[2025-11-04 18:49:53.310] lector=2 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16f9fb000
+[2025-11-04 18:49:53.310] lector=7 | biblioteca=1 | libro=0 | devuelve libro | hilo=0x16fcb7000
+[2025-11-04 18:49:53.310] lector=7 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fcb7000
+[2025-11-04 18:49:53.310] lector=2 | biblioteca=0 | libro=0 | obtiene libro | hilo=0x16f9fb000
+[2025-11-04 18:49:53.310] lector=1 | biblioteca=1 | libro=0 | obtiene libro | hilo=0x16f96f000
+[2025-11-04 18:49:53.310] lector=7 | biblioteca=2 | libro=0 | obtiene libro | hilo=0x16fcb7000
+[2025-11-04 18:49:53.315] lector=9 | biblioteca=0 | libro=2 | devuelve libro | hilo=0x16fdcf000
+[2025-11-04 18:49:53.315] lector=9 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fdcf000
+[2025-11-04 18:49:53.315] lector=9 | biblioteca=1 | libro=3 | obtiene libro | hilo=0x16fdcf000
+[2025-11-04 18:49:53.315] lector=8 | biblioteca=0 | libro=3 | devuelve libro | hilo=0x16fd43000
+[2025-11-04 18:49:53.315] lector=8 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fd43000
+[2025-11-04 18:49:53.315] lector=8 | biblioteca=1 | completa todas las lecturas | hilo=0x16fd43000
+[2025-11-04 18:49:54.306] lector=4 | biblioteca=1 | libro=2 | devuelve libro | hilo=0x16fb13000
+[2025-11-04 18:49:54.306] lector=4 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fb13000
+[2025-11-04 18:49:54.306] lector=4 | biblioteca=2 | libro=3 | obtiene libro | hilo=0x16fb13000
+[2025-11-04 18:49:54.309] lector=6 | biblioteca=2 | libro=1 | devuelve libro | hilo=0x16fc2b000
+[2025-11-04 18:49:54.309] lector=6 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fc2b000
+[2025-11-04 18:49:54.309] lector=6 | biblioteca=0 | libro=1 | obtiene libro | hilo=0x16fc2b000
+[2025-11-04 18:49:54.313] lector=0 | biblioteca=0 | libro=4 | devuelve libro | hilo=0x16f8e3000
+[2025-11-04 18:49:54.313] lector=0 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16f8e3000
+[2025-11-04 18:49:54.313] lector=0 | biblioteca=1 | libro=2 | obtiene libro | hilo=0x16f8e3000
+[2025-11-04 18:49:54.314] lector=3 | biblioteca=1 | libro=1 | devuelve libro | hilo=0x16fa87000
+[2025-11-04 18:49:54.314] lector=3 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fa87000
+[2025-11-04 18:49:54.314] lector=3 | biblioteca=2 | completa todas las lecturas | hilo=0x16fa87000
+[2025-11-04 18:49:54.314] lector=2 | biblioteca=0 | libro=0 | devuelve libro | hilo=0x16f9fb000
+[2025-11-04 18:49:54.314] lector=2 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16f9fb000
+[2025-11-04 18:49:54.314] lector=2 | biblioteca=1 | completa todas las lecturas | hilo=0x16f9fb000
+[2025-11-04 18:49:54.314] lector=7 | biblioteca=2 | libro=0 | devuelve libro | hilo=0x16fcb7000
+[2025-11-04 18:49:54.314] lector=7 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fcb7000
+[2025-11-04 18:49:54.314] lector=7 | biblioteca=0 | completa todas las lecturas | hilo=0x16fcb7000
+[2025-11-04 18:49:55.310] lector=5 | biblioteca=2 | libro=2 | devuelve libro | hilo=0x16fb9f000
+[2025-11-04 18:49:55.310] lector=5 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fb9f000
+[2025-11-04 18:49:55.310] lector=5 | biblioteca=0 | libro=0 | obtiene libro | hilo=0x16fb9f000
+[2025-11-04 18:49:55.313] lector=1 | biblioteca=1 | libro=0 | devuelve libro | hilo=0x16f96f000
+[2025-11-04 18:49:55.313] lector=1 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16f96f000
+[2025-11-04 18:49:55.313] lector=1 | biblioteca=2 | libro=0 | obtiene libro | hilo=0x16f96f000
+[2025-11-04 18:49:55.317] lector=9 | biblioteca=1 | libro=3 | devuelve libro | hilo=0x16fdcf000
+[2025-11-04 18:49:55.318] lector=9 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fdcf000
+[2025-11-04 18:49:55.318] lector=9 | biblioteca=2 | completa todas las lecturas | hilo=0x16fdcf000
+[2025-11-04 18:49:56.309] lector=4 | biblioteca=2 | libro=3 | devuelve libro | hilo=0x16fb13000
+[2025-11-04 18:49:56.310] lector=4 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16fb13000
+[2025-11-04 18:49:56.310] lector=4 | biblioteca=0 | completa todas las lecturas | hilo=0x16fb13000
+[2025-11-04 18:49:56.311] lector=6 | biblioteca=0 | libro=1 | devuelve libro | hilo=0x16fc2b000
+[2025-11-04 18:49:56.311] lector=6 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fc2b000
+[2025-11-04 18:49:56.311] lector=6 | biblioteca=1 | libro=0 | obtiene libro | hilo=0x16fc2b000
+[2025-11-04 18:49:56.317] lector=0 | biblioteca=1 | libro=2 | devuelve libro | hilo=0x16f8e3000
+[2025-11-04 18:49:56.318] lector=0 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16f8e3000
+[2025-11-04 18:49:56.318] lector=0 | biblioteca=2 | completa todas las lecturas | hilo=0x16f8e3000
+[2025-11-04 18:49:56.318] lector=0 | hilo_finalizado
+[2025-11-04 18:49:57.314] lector=5 | biblioteca=0 | libro=0 | devuelve libro | hilo=0x16fb9f000
+[2025-11-04 18:49:57.314] lector=5 | biblioteca=1 | se dirige a siguiente biblioteca | hilo=0x16fb9f000
+[2025-11-04 18:49:57.314] lector=5 | biblioteca=1 | completa todas las lecturas | hilo=0x16fb9f000
+[2025-11-04 18:49:57.314] lector=1 | biblioteca=2 | libro=0 | devuelve libro | hilo=0x16f96f000
+[2025-11-04 18:49:57.315] lector=1 | biblioteca=0 | se dirige a siguiente biblioteca | hilo=0x16f96f000
+[2025-11-04 18:49:57.315] lector=1 | biblioteca=0 | completa todas las lecturas | hilo=0x16f96f000
+[2025-11-04 18:49:57.315] lector=1 | hilo_finalizado
+[2025-11-04 18:49:57.315] lector=2 | hilo_finalizado
+[2025-11-04 18:49:57.315] lector=3 | hilo_finalizado
+[2025-11-04 18:49:57.315] lector=4 | hilo_finalizado
+[2025-11-04 18:49:57.315] lector=5 | hilo_finalizado
+[2025-11-04 18:49:58.316] lector=6 | biblioteca=1 | libro=0 | devuelve libro | hilo=0x16fc2b000
+[2025-11-04 18:49:58.316] lector=6 | biblioteca=2 | se dirige a siguiente biblioteca | hilo=0x16fc2b000
+[2025-11-04 18:49:58.316] lector=6 | biblioteca=2 | completa todas las lecturas | hilo=0x16fc2b000
+[2025-11-04 18:49:58.316] lector=6 | hilo_finalizado
+[2025-11-04 18:49:58.316] lector=7 | hilo_finalizado
+[2025-11-04 18:49:58.316] lector=8 | hilo_finalizado
+[2025-11-04 18:49:58.316] lector=9 | hilo_finalizado
+[2025-11-04 18:50:18.932] lector=-1 | fin_simulacion
